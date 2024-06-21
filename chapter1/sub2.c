@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* °C=(5/9)(°F-32) */
+/* Variables and Arithmetic Expressions
+ *
+ * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 8). Pearson Education. Kindle Edition. 
+ */
 int main() {
   float fahr, celsius;
   int lower, upper, step;
