@@ -1,9 +1,9 @@
-#include <stdio.h>
-
 /* Variables and Arithmetic Expressions
  *
  * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 8). Pearson Education. Kindle Edition. 
  */
+#include <stdio.h>
+
 int main() {
   float fahr, celsius;
   int lower, upper, step;

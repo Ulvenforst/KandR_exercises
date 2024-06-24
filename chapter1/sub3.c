@@ -1,10 +1,10 @@
-#include <stdio.h>
-
 /*
  * The For Statement
  *
  * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 13). Pearson Education. Kindle Edition. 
  */
+#include <stdio.h>
+
 int main(){
   int fahr;
   for(fahr = 0; fahr <= 300; fahr += 20)

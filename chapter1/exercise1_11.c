@@ -1,13 +1,13 @@
-#include <stdio.h>
-
-#define IN  1
-#define OUT 0
-
 /*
  * How would you test the word count program? What kinds of input are most likely to uncover bugs if there are any?
  *
  * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 21). Pearson Education. Kindle Edition.
  */
+#include <stdio.h>
+
+#define IN  1
+#define OUT 0
+
 int main(){
   int c, nl, nw, nc, state;
 

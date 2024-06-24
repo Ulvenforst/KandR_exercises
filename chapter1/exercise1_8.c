@@ -1,10 +1,10 @@
-#include <stdio.h>
-
 /* 
  * Write a program to count blanks, tabs, and newlines.
  *
  * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 20). Pearson Education. Kindle Edition. 
  */
+#include <stdio.h>
+
 int main(){
   int c, blanks, tabs, nl;
 

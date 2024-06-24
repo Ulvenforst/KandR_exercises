@@ -1,10 +1,10 @@
-#include <stdio.h>
-
 /*
  * Arrays
  *
  * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 22). Pearson Education. Kindle Edition.
  */
+#include <stdio.h>
+
 int main() {
   int c, i, nwhite, nother;
   int ndigit[10];

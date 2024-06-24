@@ -1,14 +1,14 @@
+/*
+ * Write a program to print a histogram of the lengths of words in its input. It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging.
+ *
+ * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 24). Pearson Education. Kindle Edition.
+ */
 #include <stdio.h>
 
 #define IN  1
 #define OUT 0
 #define MAX 10
 
-/*
- * Write a program to print a histogram of the lengths of words in its input. It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging.
- *
- * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 24). Pearson Education. Kindle Edition.
- */
 int main() {
   int c, state, length, i, j;
   int lengths[MAX];
@@ -34,8 +34,8 @@ int main() {
     ++lengths[length + 1];
 
   putchar('\n');
-  for (i = 1; i < MAX; ++i) {
-    printf("%d | ", i);
+  for (i = 0; i < MAX; ++i) {
+    printf("%3d| ", i+1);
     for (j = 0; j < lengths[i]; ++j)
       putchar('#');
     putchar('\n');

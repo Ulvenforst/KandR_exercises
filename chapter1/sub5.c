@@ -1,13 +1,13 @@
-#include <stdio.h>
-
-#define IN  1
-#define OUT 0
-
 /* 
  * Character Input and Output
  *
  * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 15). Pearson Education. Kindle Edition.
  */
+#include <stdio.h>
+
+#define IN  1
+#define OUT 0
+
 int main(){
   /* sub 1: File Copying */
   int c, nl; /* sub 3: Line Counting (nl) */
