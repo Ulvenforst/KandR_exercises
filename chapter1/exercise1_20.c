@@ -27,8 +27,7 @@ int main() {
 /* deta: given a string line, it replaces tabs with the proper number of blanks */
 void detab(char line[]) {
   char buff[MAXLINE];
-  int i;
-  for(i = 0; line[i] != '\0'; ++i) {
+  for(int i = 0; line[i] != '\0'; ++i) {
     if (line[i] == '\t') {
       int num_tabs = TABSTOP - i % TABSTOP;
       copy(buff, line, 0, i);
