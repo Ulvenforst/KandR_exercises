@@ -1,0 +1,29 @@
+/*
+ * Write a program detab that replaces tabs in the input with the proper number of blanks to space to the next tab stop. Assume a fixed set of tab stops, say every n columns. Should n be a variable or a symbolic parameter?
+ *
+ * W., Kernighan Brian; Ritchie Dennis. C Programming Language (p. 34). Pearson Education. Kindle Edition.
+ */
+#include <stdio.h>
+
+#define MAXLINE 1000 /* maximum input line size */
+#define TABSTOP 9
+
+int detab(char line[]);
+
+int main() {
+  char test1[] = {'H', 'o', 'l', 'a', ' ', 'm', 'u', 'n', 'd', 'o', '\n','\0'};
+  char test2[MAXLINE];
+  int i;
+
+  for (i = 0; test1[i] != '\0'; ++i)
+    test2[i] = test1[i];
+  test2[i] = '\0';
+
+  test1[0] = 'h';
+
+  printf("test1: %s", test1);
+  printf("test2: %s", test2);
+
+  return 0;
+}
+
