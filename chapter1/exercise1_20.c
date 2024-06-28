@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 #define MAXLINE 1000 /* maximum input line size */
-#define TABSTOP 8
+#define TABSTOP 8    /* tab stop size */
 
 int get_line(char line[], int limit);
 void copy(char to[], char from[], int index_to, int index_from);
@@ -32,7 +32,7 @@ void detab(char line[]) {
       int num_tabs = TABSTOP - i % TABSTOP;
       copy(buff, line, 0, i);
       for (int j = 0; j < num_tabs; ++j) {
-        line[i] = '*';
+        line[i] = ' ';
         ++i;
       }
       copy(line, buff, i, -1);
@@ -54,7 +54,7 @@ int get_line(char s[], int lim) {
   return nc;
 }
 
-/* copy: copy 'from' into 'to'; assume 'to' is big enough */
+/* copy: copy 'from' into 'to' giving the indexes to start copying */
 void copy(char to[], char from[], int j, int i) {
   ++i;
   while ((to[j] = from[i]) != '\0'){
